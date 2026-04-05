@@ -38,7 +38,7 @@ export default function CatalogSection() {
     <section id="catalog" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-orange-500 font-bold tracking-wider uppercase text-sm mb-2 block">Catálogo Corporativo</span>
+          <span className="text-sky-600 font-bold tracking-wider uppercase text-sm mb-2 block">Catálogo Corporativo</span>
           <h2 className="text-3xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Equipos Destacados</h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Soluciones de comunicación robustas construidas para superar los desafíos más extremos de su operación en cualquier terreno libre de interferencias.

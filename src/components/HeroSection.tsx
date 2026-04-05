@@ -14,7 +14,7 @@ export default function HeroSection() {
             <span>Resistencia y Tecnología para la Industria</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
-            Comunicaciones Tácticas para <span className="text-orange-500">Operaciones Críticas</span>
+            Comunicaciones Tácticas para <span className="text-sky-400">Operaciones Críticas</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
             Equipos de radiocomunicación industrial diseñados para soportar los entornos más exigentes. Conectividad inquebrantable para minería, construcción y entidades del Estado.
@@ -22,7 +22,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a 
               href="#catalog"
-              className="inline-flex justify-center items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-all duration-200 transform hover:-translate-y-1 shadow-lg shadow-orange-500/25"
+              className="inline-flex justify-center items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white px-8 py-4 rounded-md font-bold text-lg transition-all duration-200 transform hover:-translate-y-1 shadow-lg shadow-sky-600/25"
             >
               Ver Catálogo
               <ArrowRight size={20} />

@@ -6,7 +6,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Nuestro ADN</h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-sky-600 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">

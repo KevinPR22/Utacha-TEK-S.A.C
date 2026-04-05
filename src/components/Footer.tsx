@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
             <span className="text-2xl font-black tracking-tighter text-white mb-6 block">
-              UTACHA<span className="text-orange-500">TEK</span>
+              UTACHA<span className="text-sky-500">TEK</span>
             </span>
             <p className="text-slate-400 mb-6 max-w-sm">
               Especialistas en telecomunicaciones industriales de alto rendimiento. Brindamos soluciones asertivas frente a entornos y condiciones extremas en todo el territorio.
@@ -18,15 +18,15 @@ export default function Footer() {
             <h4 className="text-lg font-bold text-white mb-6 uppercase tracking-wider">Contacto Comercial</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="text-orange-500 mt-1 flex-shrink-0" size={20} />
+                <MapPin className="text-sky-500 mt-1 flex-shrink-0" size={20} />
                 <span>Lima, Perú. (Despachos a nivel nacional a minería y gobierno)</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="text-orange-500 flex-shrink-0" size={20} />
+                <Phone className="text-sky-500 flex-shrink-0" size={20} />
                 <span>+51 987 654 321</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="text-orange-500 flex-shrink-0" size={20} />
+                <Mail className="text-sky-500 flex-shrink-0" size={20} />
                 <span>ventas@utachatek.com</span>
               </li>
             </ul>
@@ -35,9 +35,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold text-white mb-6 uppercase tracking-wider">Soluciones</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-orange-400 transition-colors">Radiocomunicación Digital</a></li>
-              <li><a href="#catalog" className="hover:text-orange-400 transition-colors">Catálogo de Equipos</a></li>
-              <li><a href="#" className="hover:text-orange-400 transition-colors">Soporte Técnico Especializado</a></li>
+              <li><a href="#" className="hover:text-sky-400 transition-colors">Radiocomunicación Digital</a></li>
+              <li><a href="#catalog" className="hover:text-sky-400 transition-colors">Catálogo de Equipos</a></li>
+              <li><a href="#" className="hover:text-sky-400 transition-colors">Soporte Técnico Especializado</a></li>
             </ul>
           </div>
         </div>

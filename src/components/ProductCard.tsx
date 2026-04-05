@@ -55,7 +55,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="space-y-3 mb-8">
           {product.specs.slice(0, 2).map((spec, idx) => (
             <div key={idx} className="flex items-center gap-3 text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100">
-              <span className="text-orange-500">{getIcon(spec.icon)}</span>
+              <span className="text-sky-600">{getIcon(spec.icon)}</span>
               <div>
                 <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">{spec.label}</p>
                 <p className="text-sm font-medium">{spec.value}</p>
