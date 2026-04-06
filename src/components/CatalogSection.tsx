@@ -30,6 +30,36 @@ const MOCK_PRODUCTS: Product[] = [
       { label: 'Batería', value: 'Hasta 28 hrs', icon: 'battery' },
       { label: 'Resistencia', value: 'IP68 / IP66 (Militar)', icon: 'shield' }
     ]
+  },
+  {
+    id: 'placeholder-4',
+    name: 'Equipo Modelo 4',
+    image: '',
+    description: 'Descripción del equipo 4. Espacio reservado para agregar detalles sobre la conectividad o rendimiento del modelo.',
+    specs: [
+      { label: 'Característica 1', value: 'Valor 1', icon: 'radio' },
+      { label: 'Característica 2', value: 'Valor 2', icon: 'shield' }
+    ]
+  },
+  {
+    id: 'placeholder-5',
+    name: 'Equipo Modelo 5',
+    image: '',
+    description: 'Descripción del equipo 5. Espacio reservado para agregar detalles sobre la conectividad o rendimiento del modelo.',
+    specs: [
+      { label: 'Característica 1', value: 'Valor 1', icon: 'battery' },
+      { label: 'Característica 2', value: 'Valor 2', icon: 'radio' }
+    ]
+  },
+  {
+    id: 'placeholder-6',
+    name: 'Equipo Modelo 6',
+    image: '',
+    description: 'Descripción del equipo 6. Espacio reservado para agregar detalles sobre la conectividad o rendimiento del modelo.',
+    specs: [
+      { label: 'Característica 1', value: 'Valor 1', icon: 'shield' },
+      { label: 'Característica 2', value: 'Valor 2', icon: 'battery' }
+    ]
   }
 ];
 

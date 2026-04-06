@@ -19,15 +19,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="text-sky-500 mt-1 flex-shrink-0" size={20} />
-                <span>Lima, Perú. (Despachos a nivel nacional a minería y gobierno)</span>
+                <span>Arequipilla, Peru, 054. Puno Region · Arequipa, Perú · Tacna, Perú · Cuzco, Perú + 1</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-sky-500 flex-shrink-0" size={20} />
-                <span>+51 987 654 321</span>
+                <span>989 721 843</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-sky-500 flex-shrink-0" size={20} />
-                <span>ventas@utachatek.com</span>
+                <span>utachatec@gmail.com</span>
               </li>
             </ul>
           </div>
