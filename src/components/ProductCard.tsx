@@ -5,6 +5,8 @@ export interface Product {
   name: string;
   image: string;
   description: string;
+  badge?: string;
+  badgeClassName?: string;
   specs: {
     label: string;
     value: string;
@@ -17,7 +19,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const whatsappNumber = "1234567890"; // Reemplazar con numero real
+  const whatsappNumber = "51989721843";
   const message = encodeURIComponent(`Hola, quisiera cotizar el equipo ${product.name}`);
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
@@ -47,7 +49,9 @@ export default function ProductCard({ product }: ProductCardProps) {
       
       <div className="p-6 flex flex-col flex-grow">
         <div className="mb-2">
-          <span className="inline-block px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded mb-2">MOTOROLA SOLUTIONS</span>
+          <span className={`inline-block px-2 py-1 text-xs font-bold rounded mb-2 ${product.badgeClassName || 'bg-slate-100 text-slate-600'}`}>
+            {product.badge || 'MOTOROLA SOLUTIONS'}
+          </span>
           <h3 className="text-2xl font-bold text-slate-900">{product.name}</h3>
         </div>
         <p className="text-slate-600 text-sm mb-6 flex-grow">{product.description}</p>

@@ -2,63 +2,99 @@ import ProductCard, { type Product } from './ProductCard';
 
 const MOCK_PRODUCTS: Product[] = [
   {
-    id: 'dep450',
-    name: 'Motorola DEP450',
-    image: '', // Empty to use the Radio icon placeholder
-    description: 'Radio portátil digital de dos vías. Simple y eficaz para usuarios que necesitan conectividad básica y confiabilidad superior en el campo.',
+    id: 'nad6502',
+    name: 'Antena Motorola NAD6502',
+    image: '/NAD6502-ANTENA.jpg',
+    badge: 'MOTOROLA SOLUTIONS',
+    badgeClassName: 'bg-slate-100 text-slate-600',
+    description: 'Antena de látigo flexible (Heliflex) de 15 cm para banda VHF. Repuesto original con conector de tornillo, altamente compatible con la serie DEP450, EP450 y CP.',
     specs: [
-      { label: 'Autonomía', value: 'Hasta 14.5 hrs', icon: 'battery' },
-      { label: 'Protección', value: 'IP54 (Polvo y agua)', icon: 'shield' }
+      { label: 'Frecuencia', value: 'VHF 136-174 MHz', icon: 'radio' },
+      { label: 'Compatibilidad', value: 'Serie DEP / EP / CP', icon: 'shield' }
     ]
   },
   {
-    id: 'dgm8500',
-    name: 'Motorola DGM8500e',
-    image: '', // Empty to use the Radio icon placeholder
-    description: 'Radio móvil con GPS y Bluetooth integrado, ideal para flotas de vehículos mineros y centros de control avanzado.',
+    id: 'dem300',
+    name: 'Motorola Serie DEM 300 / 400',
+    image: '/demo300-400.png',
+    badge: 'MOTOROLA SOLUTIONS',
+    badgeClassName: 'bg-slate-100 text-slate-600',
+    description: 'Radios móviles digitales y analógicos ideales para instalación en flotas de vehículos. Diseñados para choferes habituales, ofrecen comunicación clara sin distracciones y diseño resistente IP54.',
     specs: [
-      { label: 'Red', value: 'UHF / VHF / 800 MHz', icon: 'radio' },
-      { label: 'Protección', value: 'IP54', icon: 'shield' }
+      { label: 'Uso', value: 'Instalación en Vehículos', icon: 'radio' },
+      { label: 'Protección', value: 'IP54 (Polvo y salpicaduras)', icon: 'shield' }
     ]
   },
   {
     id: 'r7',
     name: 'Motorola MOTOTRBO R7',
-    image: '', // Empty to use the Radio icon placeholder
-    description: 'El nuevo estándar. Cancelación de ruido industrial adaptativa, robustez militar y rediseñado para la industria pesada.',
+    image: '/r7-imagen.png',
+    badge: 'MOTOROLA SOLUTIONS',
+    badgeClassName: 'bg-slate-100 text-slate-600',
+    description: 'Radio portátil UHF/VHF de 5W de potencia. Cuenta con pantalla QVGA, cancelación de ruido avanzada y diseño intrínsecamente seguro para operaciones de misión crítica.',
     specs: [
-      { label: 'Batería', value: 'Hasta 28 hrs', icon: 'battery' },
-      { label: 'Resistencia', value: 'IP68 / IP66 (Militar)', icon: 'shield' }
+      { label: 'Resistencia', value: 'Militar (MIL-STD 810)', icon: 'shield' },
+      { label: 'Audio', value: 'Cancelación de ruido', icon: 'radio' }
     ]
   },
   {
-    id: 'placeholder-4',
-    name: 'Equipo Modelo 4',
-    image: '',
-    description: 'Descripción del equipo 4. Espacio reservado para agregar detalles sobre la conectividad o rendimiento del modelo.',
+    id: 'tx500',
+    name: 'TXPRO TX-500',
+    image: '/tx500-imagen.png',
+    badge: 'TXPRO PROFESSIONAL',
+    badgeClassName: 'bg-red-50 text-red-700',
+    description: 'Radio portátil profesional con 5 Watts de potencia reales. Diseñado para ofrecer la mejor calidad y alcance continuo en entornos de trabajo exigentes.',
     specs: [
-      { label: 'Característica 1', value: 'Valor 1', icon: 'radio' },
-      { label: 'Característica 2', value: 'Valor 2', icon: 'shield' }
+      { label: 'Batería', value: '2500 mAh', icon: 'battery' },
+      { label: 'Garantía', value: '2 Años', icon: 'shield' }
     ]
   },
   {
-    id: 'placeholder-5',
-    name: 'Equipo Modelo 5',
-    image: '',
-    description: 'Descripción del equipo 5. Espacio reservado para agregar detalles sobre la conectividad o rendimiento del modelo.',
+    id: 'r5',
+    name: 'Motorola MOTOTRBO R5',
+    image: '/MOTOTRBO-R5-cju.png',
+    badge: 'MOTOROLA SOLUTIONS',
+    badgeClassName: 'bg-slate-100 text-slate-600',
+    description: 'Radio portátil UHF/VHF de 5W con capacidad de 64 canales. Incorpora tecnología DMR y cancelación de ruido SINC+ para comunicaciones nítidas y robustas.',
     specs: [
-      { label: 'Característica 1', value: 'Valor 1', icon: 'battery' },
-      { label: 'Característica 2', value: 'Valor 2', icon: 'radio' }
+      { label: 'Resistencia', value: 'Militar (MIL-STD 810)', icon: 'shield' },
+      { label: 'Audio', value: 'Cancelación SINC+', icon: 'radio' }
     ]
   },
   {
-    id: 'placeholder-6',
-    name: 'Equipo Modelo 6',
-    image: '',
-    description: 'Descripción del equipo 6. Espacio reservado para agregar detalles sobre la conectividad o rendimiento del modelo.',
+    id: 'r2',
+    name: 'Motorola MOTOTRBO R2',
+    image: '/R2-VHF-FRONTAL.png',
+    badge: 'MOTOROLA SOLUTIONS',
+    badgeClassName: 'bg-slate-100 text-slate-600',
+    description: 'Radio portátil UHF/VHF de uso diario fiable y resistente. Cuenta con 5W de potencia, capacidad de 64 canales y formato ergonómico para un día de trabajo ininterrumpido.',
     specs: [
-      { label: 'Característica 1', value: 'Valor 1', icon: 'shield' },
-      { label: 'Característica 2', value: 'Valor 2', icon: 'battery' }
+      { label: 'Protección', value: 'IP55 (Polvo y agua)', icon: 'shield' },
+      { label: 'Audio', value: 'Supresión SINC+', icon: 'radio' }
+    ]
+  },
+  {
+    id: 'hnn9008',
+    name: 'Batería Motorola HNN9008',
+    image: '/HNN9008-BATERIA.jpg',
+    badge: 'MOTOROLA SOLUTIONS',
+    badgeClassName: 'bg-slate-100 text-slate-600',
+    description: 'Batería NiMH de 7.2V conocida por su robustez en trabajo pesado. Capacidad de hasta 1500 mAh y protección IP54 contra polvo y salpicaduras. Compatible con series PRO, GP, HT y MTX.',
+    specs: [
+      { label: 'Capacidad', value: '1500 mAh (NiMH)', icon: 'battery' },
+      { label: 'Compatibilidad', value: 'Serie PRO/GP/HT', icon: 'shield' }
+    ]
+  },
+  {
+    id: 'rln5644',
+    name: 'Clip de Cinturón Motorola RLN5644',
+    image: '/RLN5644-CLIP.jpg',
+    badge: 'MOTOROLA SOLUTIONS',
+    badgeClassName: 'bg-slate-100 text-slate-600',
+    description: 'Clip de sujeción de 2 pulgadas fabricado en plástico de alto impacto con mecanismo metálico de resorte (Spring Action). Permite un acople rápido y seguro.',
+    specs: [
+      { label: 'Compatibilidad', value: 'Serie DEP / EP / CP', icon: 'shield' },
+      { label: 'Fijación', value: 'Acople a Batería', icon: 'battery' }
     ]
   }
 ];
