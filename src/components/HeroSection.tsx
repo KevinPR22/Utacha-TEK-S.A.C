@@ -1,14 +1,10 @@
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 
-<<<<<<< HEAD
 interface HeroSectionProps {
   onViewCatalog: () => void;
 }
 
 export default function HeroSection({ onViewCatalog }: HeroSectionProps) {
-=======
-export default function HeroSection() {
->>>>>>> cff861f224f430fb0e89d8c8e523784f5fb51115
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-slate-900 text-white overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-20">
@@ -29,7 +25,6 @@ export default function HeroSection() {
               Equipos de radiocomunicación industrial diseñados para soportar los entornos más exigentes. Conectividad inquebrantable para minería, construcción y entidades del Estado.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-<<<<<<< HEAD
               <button 
                 onClick={() => {
                   window.scrollTo(0, 0);
@@ -40,15 +35,6 @@ export default function HeroSection() {
                 Ver Catálogo
                 <ArrowRight size={20} />
               </button>
-=======
-              <a 
-                href="#catalog"
-                className="inline-flex justify-center items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white px-8 py-4 rounded-md font-bold text-lg transition-all duration-200 transform hover:-translate-y-1 shadow-lg shadow-sky-600/25"
-              >
-                Ver Catálogo
-                <ArrowRight size={20} />
-              </a>
->>>>>>> cff861f224f430fb0e89d8c8e523784f5fb51115
             </div>
           </div>
           
