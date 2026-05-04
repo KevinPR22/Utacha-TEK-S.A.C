@@ -1,4 +1,4 @@
-import { MessageCircle, Radio, Battery, Shield, Sun, Camera, FileText } from 'lucide-react';
+import { MessageCircle, Radio, Battery, Shield, Sun, Camera, FileText, Zap, Grid, Layers, Briefcase, Plug, Smartphone, Ruler, Antenna, GitBranch, BatteryFull, ShieldCheck, ArrowRightLeft, Video, ShieldAlert, Thermometer, Moon, Cctv, Flame, Eye, ZoomIn, Brain, Droplet, Mic, Maximize, Network, Car, EyeOff } from 'lucide-react';
 
 export interface Product {
   id: string;
@@ -14,7 +14,7 @@ export interface Product {
   specs: {
     label: string;
     value: string;
-    icon: 'battery' | 'shield' | 'radio' | 'sun' | 'camera';
+    icon: 'battery' | 'shield' | 'radio' | 'sun' | 'camera' | 'zap' | 'grid' | 'layers' | 'briefcase' | 'plug' | 'smartphone' | 'ruler' | 'antenna' | 'git-branch' | 'battery-full' | 'shield-check' | 'arrow-right-left' | 'video' | 'shield-alert' | 'thermometer' | 'moon' | 'cctv' | 'flame' | 'eye' | 'zoom-in' | 'brain' | 'droplet' | 'mic' | 'maximize' | 'network' | 'car' | 'eye-off';
   }[];
 }
 
@@ -34,6 +34,33 @@ export default function ProductCard({ product }: ProductCardProps) {
       case 'radio': return <Radio size={16} />;
       case 'sun': return <Sun size={16} />;
       case 'camera': return <Camera size={16} />;
+      case 'zap': return <Zap size={16} />;
+      case 'grid': return <Grid size={16} />;
+      case 'layers': return <Layers size={16} />;
+      case 'briefcase': return <Briefcase size={16} />;
+      case 'plug': return <Plug size={16} />;
+      case 'smartphone': return <Smartphone size={16} />;
+      case 'ruler': return <Ruler size={16} />;
+      case 'antenna': return <Antenna size={16} />;
+      case 'git-branch': return <GitBranch size={16} />;
+      case 'battery-full': return <BatteryFull size={16} />;
+      case 'shield-check': return <ShieldCheck size={16} />;
+      case 'arrow-right-left': return <ArrowRightLeft size={16} />;
+      case 'video': return <Video size={16} />;
+      case 'shield-alert': return <ShieldAlert size={16} />;
+      case 'thermometer': return <Thermometer size={16} />;
+      case 'moon': return <Moon size={16} />;
+      case 'cctv': return <Cctv size={16} />;
+      case 'flame': return <Flame size={16} />;
+      case 'eye': return <Eye size={16} />;
+      case 'zoom-in': return <ZoomIn size={16} />;
+      case 'brain': return <Brain size={16} />;
+      case 'droplet': return <Droplet size={16} />;
+      case 'mic': return <Mic size={16} />;
+      case 'maximize': return <Maximize size={16} />;
+      case 'network': return <Network size={16} />;
+      case 'car': return <Car size={16} />;
+      case 'eye-off': return <EyeOff size={16} />;
       default: return <Radio size={16} />;
     }
   };
