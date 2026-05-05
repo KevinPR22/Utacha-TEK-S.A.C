@@ -894,6 +894,36 @@ const MOCK_PRODUCTS: Product[] = [
     ]
   },
   {
+    id: 'txpro-tx-600',
+    name: 'Radio Portátil tx PRO TX-600',
+    category: 'Radios',
+    brand: 'TXPRO Professional',
+    image: '/products/radios/txpro-tx-600.png',
+    badge: 'TX PRO',
+    badgeClassName: 'bg-red-100 text-red-800',
+    description: 'Radio portátil profesional que opera en el rango UHF de 450-470 MHz y cuenta con 16 canales y 5 Watts de potencia de salida real. Destaca por su batería de alta capacidad de 2500 mAh, soporta función VOX y candado de canal ocupado, e incluye un kit completo con cargador, batería, clip, sostenedor y antena.',
+    pdfUrl: '/fichas/radios/txpro-tx-600.pdf',
+    specs: [
+      { label: 'POTENCIA', value: '5 Watts', icon: 'zap' },
+      { label: 'BATERÍA', value: '2500 mAh', icon: 'battery' }
+    ]
+  },
+  {
+    id: 'txpro-tx-320',
+    name: 'Radio Portátil tx PRO TX-320',
+    category: 'Radios',
+    brand: 'TXPRO Professional',
+    image: '/products/radios/txpro-tx-320.png',
+    badge: 'TX PRO',
+    badgeClassName: 'bg-red-100 text-red-800',
+    description: 'Radio portátil que opera en el rango de frecuencias de 450-470 MHz, contando con 16 canales y 2 Watts de potencia de salida real. Destaca por incluir funciones prácticas como VOX, escaneo de canales (Scan) y protección de configuración mediante password de lectura y escritura. Se entrega con un kit que incluye cargador, batería de 1200 mAh, clip y antena.',
+    pdfUrl: '/fichas/radios/txpro-tx-320.pdf',
+    specs: [
+      { label: 'POTENCIA', value: '2 Watts', icon: 'zap' },
+      { label: 'FUNCIONES', value: 'VOX / Scan', icon: 'settings' }
+    ]
+  },
+  {
     id: 'r5',
     name: 'Motorola MOTOTRBO R5',
     category: 'Radios',

@@ -1,4 +1,4 @@
-import { MessageCircle, Radio, Battery, Shield, Sun, Camera, FileText, Zap, Grid, Layers, Briefcase, Plug, Smartphone, Ruler, Antenna, GitBranch, BatteryFull, ShieldCheck, ArrowRightLeft, Video, ShieldAlert, Thermometer, Moon, Cctv, Flame, Eye, ZoomIn, Brain, Droplet, Mic, Maximize, Network, Car, EyeOff } from 'lucide-react';
+import { MessageCircle, Radio, Battery, Shield, Sun, Camera, FileText, Zap, Grid, Layers, Briefcase, Plug, Smartphone, Ruler, Antenna, GitBranch, BatteryFull, ShieldCheck, ArrowRightLeft, Video, ShieldAlert, Thermometer, Moon, Cctv, Flame, Eye, ZoomIn, Brain, Droplet, Mic, Maximize, Network, Car, EyeOff, Settings } from 'lucide-react';
 
 export interface Product {
   id: string;
@@ -14,7 +14,7 @@ export interface Product {
   specs: {
     label: string;
     value: string;
-    icon: 'battery' | 'shield' | 'radio' | 'sun' | 'camera' | 'zap' | 'grid' | 'layers' | 'briefcase' | 'plug' | 'smartphone' | 'ruler' | 'antenna' | 'git-branch' | 'battery-full' | 'shield-check' | 'arrow-right-left' | 'video' | 'shield-alert' | 'thermometer' | 'moon' | 'cctv' | 'flame' | 'eye' | 'zoom-in' | 'brain' | 'droplet' | 'mic' | 'maximize' | 'network' | 'car' | 'eye-off';
+    icon: 'battery' | 'shield' | 'radio' | 'sun' | 'camera' | 'zap' | 'grid' | 'layers' | 'briefcase' | 'plug' | 'smartphone' | 'ruler' | 'antenna' | 'git-branch' | 'battery-full' | 'shield-check' | 'arrow-right-left' | 'video' | 'shield-alert' | 'thermometer' | 'moon' | 'cctv' | 'flame' | 'eye' | 'zoom-in' | 'brain' | 'droplet' | 'mic' | 'maximize' | 'network' | 'car' | 'eye-off' | 'settings';
   }[];
 }
 
@@ -61,6 +61,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       case 'network': return <Network size={16} />;
       case 'car': return <Car size={16} />;
       case 'eye-off': return <EyeOff size={16} />;
+      case 'settings': return <Settings size={16} />;
       default: return <Radio size={16} />;
     }
   };
