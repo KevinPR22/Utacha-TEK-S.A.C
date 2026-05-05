@@ -19,10 +19,10 @@ export default function HeroSection({ onViewCatalog }: HeroSectionProps) {
               <span>Resistencia y Tecnología para la Industria</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
-              Comunicaciones Tácticas para <span className="text-sky-400">Operaciones Críticas</span>
+              Equipos de Radiocomunicación para <span className="text-sky-400">Operaciones Exigentes</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Equipos de radiocomunicación industrial diseñados para soportar los entornos más exigentes. Conectividad inquebrantable para minería, construcción y entidades del Estado.
+              Equipos de seguridad y conectividad industrial diseñados para soportar condiciones extremas. Rendimiento inquebrantable para minería, cuerpos de bomberos, grandes proyectos de construcción y especialistas del sector.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button 

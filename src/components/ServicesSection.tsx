@@ -1,4 +1,4 @@
-import { Settings, Wrench, HeadphonesIcon, ShieldCheck } from 'lucide-react';
+import { Settings, HeadphonesIcon, ShieldCheck } from 'lucide-react';
 import FadeIn from './FadeIn';
 
 export default function ServicesSection() {
@@ -12,11 +12,6 @@ export default function ServicesSection() {
       title: 'Instalación Especializada',
       description: 'Implementación y montaje de sistemas de telecomunicaciones en entornos industriales y de difícil acceso.',
       icon: <Settings size={32} />
-    },
-    {
-      title: 'Mantenimiento Preventivo',
-      description: 'Cuidado y revisión periódica de su infraestructura para garantizar su funcionamiento continuo sin interrupciones.',
-      icon: <Wrench size={32} />
     },
     {
       title: 'Soporte 24/7',
@@ -45,7 +40,7 @@ export default function ServicesSection() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <FadeIn key={index} direction="up" delay={index * 150}>
               <div className="h-full bg-slate-800/50 backdrop-blur-md p-8 rounded-2xl shadow-2xl border border-slate-700 hover:bg-slate-800 hover:border-sky-500/50 flex flex-col items-center text-center transition-all duration-300 group hover:-translate-y-2">

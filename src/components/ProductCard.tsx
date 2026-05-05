@@ -1,4 +1,4 @@
-import { MessageCircle, Radio, Battery, Shield, Sun, Camera, FileText, Zap, Grid, Layers, Briefcase, Plug, Smartphone, Ruler, Antenna, GitBranch, BatteryFull, ShieldCheck, ArrowRightLeft, Video, ShieldAlert, Thermometer, Moon, Cctv, Flame, Eye, ZoomIn, Brain, Droplet, Mic, Maximize, Network, Car, EyeOff, Settings } from 'lucide-react';
+import { MessageCircle, Radio, Battery, Shield, Sun, Camera, FileText } from 'lucide-react';
 
 export interface Product {
   id: string;
@@ -14,7 +14,7 @@ export interface Product {
   specs: {
     label: string;
     value: string;
-    icon: 'battery' | 'shield' | 'radio' | 'sun' | 'camera' | 'zap' | 'grid' | 'layers' | 'briefcase' | 'plug' | 'smartphone' | 'ruler' | 'antenna' | 'git-branch' | 'battery-full' | 'shield-check' | 'arrow-right-left' | 'video' | 'shield-alert' | 'thermometer' | 'moon' | 'cctv' | 'flame' | 'eye' | 'zoom-in' | 'brain' | 'droplet' | 'mic' | 'maximize' | 'network' | 'car' | 'eye-off' | 'settings';
+    icon: 'battery' | 'shield' | 'radio' | 'sun' | 'camera';
   }[];
 }
 
@@ -34,34 +34,6 @@ export default function ProductCard({ product }: ProductCardProps) {
       case 'radio': return <Radio size={16} />;
       case 'sun': return <Sun size={16} />;
       case 'camera': return <Camera size={16} />;
-      case 'zap': return <Zap size={16} />;
-      case 'grid': return <Grid size={16} />;
-      case 'layers': return <Layers size={16} />;
-      case 'briefcase': return <Briefcase size={16} />;
-      case 'plug': return <Plug size={16} />;
-      case 'smartphone': return <Smartphone size={16} />;
-      case 'ruler': return <Ruler size={16} />;
-      case 'antenna': return <Antenna size={16} />;
-      case 'git-branch': return <GitBranch size={16} />;
-      case 'battery-full': return <BatteryFull size={16} />;
-      case 'shield-check': return <ShieldCheck size={16} />;
-      case 'arrow-right-left': return <ArrowRightLeft size={16} />;
-      case 'video': return <Video size={16} />;
-      case 'shield-alert': return <ShieldAlert size={16} />;
-      case 'thermometer': return <Thermometer size={16} />;
-      case 'moon': return <Moon size={16} />;
-      case 'cctv': return <Cctv size={16} />;
-      case 'flame': return <Flame size={16} />;
-      case 'eye': return <Eye size={16} />;
-      case 'zoom-in': return <ZoomIn size={16} />;
-      case 'brain': return <Brain size={16} />;
-      case 'droplet': return <Droplet size={16} />;
-      case 'mic': return <Mic size={16} />;
-      case 'maximize': return <Maximize size={16} />;
-      case 'network': return <Network size={16} />;
-      case 'car': return <Car size={16} />;
-      case 'eye-off': return <EyeOff size={16} />;
-      case 'settings': return <Settings size={16} />;
       default: return <Radio size={16} />;
     }
   };
@@ -71,22 +43,22 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="relative h-72 bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-8 overflow-hidden">
         {/* Decorative background shape */}
         <div className="absolute top-0 right-0 w-32 h-32 bg-sky-100 rounded-bl-full opacity-50 transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
-        
+
         {product.image ? (
-          <img 
-            src={product.image} 
-            alt={product.name} 
+          <img
+            src={product.image}
+            alt={product.name}
             className="w-full h-full object-contain relative z-10 group-hover:scale-110 transition-transform duration-700 drop-shadow-xl"
           />
         ) : (
           <Radio size={80} className="text-slate-300 relative z-10 group-hover:scale-110 group-hover:text-sky-300 transition-all duration-700" />
         )}
       </div>
-      
+
       <div className="p-8 flex flex-col flex-grow relative bg-white">
         {/* Top subtle line */}
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        
+
         <div className="mb-4">
           <span className={`inline-block px-3 py-1 text-xs font-bold rounded-full mb-3 shadow-sm ${product.badgeClassName || 'bg-slate-100 text-slate-600'}`}>
             {product.badge || 'MOTOROLA SOLUTIONS'}
@@ -94,7 +66,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <h3 className="text-2xl font-extrabold text-slate-900 leading-tight">{product.name}</h3>
         </div>
         <p className="text-slate-600 text-sm mb-6 flex-grow leading-relaxed">{product.description}</p>
-        
+
         <div className="space-y-3 mb-6">
           {product.specs.slice(0, 2).map((spec, idx) => (
             <div key={idx} className="flex items-center gap-3 text-slate-700 bg-slate-50 p-3.5 rounded-xl border border-slate-100 group-hover:border-sky-100 group-hover:bg-sky-50/50 transition-colors duration-300">
@@ -106,10 +78,10 @@ export default function ProductCard({ product }: ProductCardProps) {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-auto space-y-3">
           {product.pdfUrl && (
-            <a 
+            <a
               href={product.pdfUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -119,8 +91,8 @@ export default function ProductCard({ product }: ProductCardProps) {
               Ver Ficha Técnica
             </a>
           )}
-          
-          <a 
+
+          <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
