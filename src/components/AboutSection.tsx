@@ -27,7 +27,7 @@ export default function AboutSection() {
               </div>
               <h3 className="text-3xl font-bold text-slate-900 mb-4 tracking-tight">Misión</h3>
               <p className="text-slate-600 leading-relaxed text-lg">
-                Proveer soluciones integrales en radiocomunicación, telecomunicaciones y otros que garanticen la conectividad total de nuestros clientes, fundamentados en los valores de solidez y confianza de Utacha (casa) y el impulso constante de la innovación TEK.
+                Proveer soluciones integrales en radiocomunicación, telecomunicaciones y otros que garanticen la conectividad total de nuestros clientes, fundamentados en los valores de solidez y confianza de Utacha y el impulso constante de la innovación TEK.
               </p>
             </div>
           </FadeIn>
